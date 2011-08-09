@@ -42,7 +42,10 @@ int main()
     primes p(n);
     for (primes::iterator it = p.cbegin(), end = p.cend(); it != end; ++it) {
         if (n % *it == 0) {
-            n /= *it;
+            do {
+                n /= *it;
+            } while (n % *it == 0);
+
             if (n == 1) {
                 std::cout << *it << '\n';
                 break;

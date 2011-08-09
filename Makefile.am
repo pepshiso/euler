@@ -1,1 +1,1 @@
-SUBDIRS = prob0001 prob0002
+SUBDIRS = prob0001 prob0002 prob0003
